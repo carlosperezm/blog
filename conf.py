@@ -284,7 +284,7 @@ COMPILERS = {
 
 # Create by default posts in one file format?
 # Set to False for two-file posts, with separate metadata.
-# ONE_FILE_POSTS = True
+ONE_FILE_POSTS = True
 
 # Preferred metadata format for new posts
 # "Nikola": reST comments wrapped in a comment if needed (default)
@@ -1373,3 +1373,7 @@ COMPILERS["orgmode"] = ('.org', )
 # Add org files to your POSTS, PAGES
 POSTS = POSTS + (("posts/*.org", "posts", "post.tmpl"), )
 PAGES = PAGES + (("stories/*.org", "stories", "story.tmpl"), )
+
+# Add jupyter notebook files to your POSTS, PAGES
+POSTS = POSTS + (("posts/*.ipynb", "posts", "post.tmpl"), )
+PAGES = PAGES + (("stories/*.ipynb", "stories", "story.tmpl"), )
