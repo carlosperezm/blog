@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carlos Perez (Posts about blog)</title><link>https://example.com/</link><description></description><atom:link href="https://example.com/categories/blog.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2017 &lt;a href="mailto:carlosperezmolano@gmail.com"&gt;Carlos Perez&lt;/a&gt; </copyright><lastBuildDate>Sun, 22 Oct 2017 17:45:15 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Blogging with Nikola and Orgmode</title><link>https://example.com/posts/blogging-with-nikola-and-orgmode/</link><dc:creator>Carlos Perez</dc:creator><description>&lt;p&gt;
+After some time in the darkness, I have finally managed to set up a blog and
+write my first "serious" entry.
+&lt;/p&gt;
+
+&lt;p&gt;
+I think it makes complete sense to star from the beginning, it means, by
+showing what I did to get this blog going. I do this mainly for myself, to make
+me organize my thoughts and filter all the resources I have used. But I will be
+really happy if it also is clear enough for someone to follow along and start
+blogging by themselves.
+&lt;/p&gt;
+
+&lt;p&gt;
+This is not the conventional blogging system used by other sites like Wordpress
+or blogger and although it is not extremely difficult to use, it does require
+some skills.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, no more words, and let's get started.
+&lt;/p&gt;
+
+
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;Static website&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+I have not had any previous experience with blogging and I have never been
+attracted by using platforms like WordPress, as it has a lot of features that
+you do not really use or control, it requires you to create an account and your
+posts need to be written in their platform, so once you do it, you do not
+really have access to them. But once I knew about the possibilities of using
+static content blog, I decided it was worth trying. Some of them are:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Easy to use and update
+&lt;/li&gt;
+&lt;li&gt;Possibility of hosting in Github Pages
+&lt;/li&gt;
+&lt;li&gt;Your posts are saved as text files
+&lt;/li&gt;
+&lt;li&gt;You look like a pro. :p
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;What do you need to get going?&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+There are countless ways to blog using a static site. Hereby I provide my
+current way of working with the following:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Nikola: a static site generator based on Python.
+&lt;/li&gt;
+&lt;li&gt;Org mode: probably the most powerful text editor.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+I will try to separate them and mainly focus in a general
+installation. I will probably restructure my this blog entry once I have more
+content written.
+&lt;/p&gt;
+
+&lt;p&gt;
+Saying that, you will definitely need the following:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Python: Use a recent version. For this tutorial, I assume it is obtained with
+the Anaconda distribution.
+&lt;/li&gt;
+&lt;li&gt;Github: A platform for hosting coding projects using the git versioning
+system. It is used to host the blog with a feature called github pages
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;Basic installation&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-3-1" class="outline-3"&gt;
+&lt;h3 id="sec-3-1"&gt;Create a Conda environment&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-1"&gt;
+&lt;p&gt;
+Once you have your python installation ready, it is time to install Nikola,
+which can be installed as any other python library.
+It is advisable to use an isolated environment to better handling dependencies.
+There are mainly two ways of doing it: creating a python virtual environment or
+using conda environments. I chose the latter as it is the one I am more
+familiar with.
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;conda create --name nikola pip
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+To make sure the environment is initialized
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;source activate nikola
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-3-2" class="outline-3"&gt;
+&lt;h3 id="sec-3-2"&gt;Initialization&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-3-3" class="outline-3"&gt;
+&lt;h3 id="sec-3-3"&gt;Theme customization&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3-3"&gt;
+&lt;p&gt;
+The default theme is bootstrap3. You have the option to further customize it by
+using bootswatch options
+&lt;/p&gt;
+
+&lt;p&gt;
+For example, if you want to use the Readable theme, use the following command
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;nikola bootswatch_theme -n readable -s readable
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Now, set the theme to "readable" in in the &lt;code&gt;conf.py&lt;/code&gt; file
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;THEME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'readable'&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>blog</category><guid>https://example.com/posts/blogging-with-nikola-and-orgmode/</guid><pubDate>Sat, 21 Oct 2017 10:13:33 GMT</pubDate></item></channel></rss>

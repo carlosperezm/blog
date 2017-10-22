@@ -1,0 +1,94 @@
+#+BEGIN_COMMENT
+.. title: Blogging with Nikola and Orgmode 
+.. slug: blogging-with-nikola-and-orgmode
+.. date: 2017-10-21 15:13:33 UTC-5:00
+.. tags: blog
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+
+After some time in the darkness, I have finally managed to set up a blog and
+write my first "serious" entry.
+
+I think it makes complete sense to star from the beginning, it means, by
+showing what I did to get this blog going. I do this mainly for myself, to make
+me organize my thoughts and filter all the resources I have used. But I will be
+really happy if it also is clear enough for someone to follow along and start
+blogging by themselves.
+
+This is not the conventional blogging system used by other sites like Wordpress
+or blogger and although it is not extremely difficult to use, it does require
+some skills.
+
+So, no more words, and let's get started.
+
+
+* Static website
+I have not had any previous experience with blogging and I have never been
+attracted by using platforms like WordPress, as it has a lot of features that
+you do not really use or control, it requires you to create an account and your
+posts need to be written in their platform, so once you do it, you do not
+really have access to them. But once I knew about the possibilities of using
+static content blog, I decided it was worth trying. Some of them are:
+ - Easy to use and update
+ - Possibility of hosting in Github Pages
+ - Your posts are saved as text files
+ - You look like a pro. :p
+
+* What do you need to get going?
+There are countless ways to blog using a static site. Hereby I provide my
+current way of working with the following:
+
+ - Nikola: a static site generator based on Python.
+ - Org mode: probably the most powerful text editor.
+
+I will try to separate them and mainly focus in a general
+installation. I will probably restructure my this blog entry once I have more
+content written.
+
+Saying that, you will definitely need the following:
+ - Python: Use a recent version. For this tutorial, I assume it is obtained with
+   the Anaconda distribution.
+ - Github: A platform for hosting coding projects using the git versioning
+   system. It is used to host the blog with a feature called github pages
+
+* Basic installation
+** Create a Conda environment
+Once you have your python installation ready, it is time to install Nikola,
+which can be installed as any other python library.
+It is advisable to use an isolated environment to better handling dependencies.
+There are mainly two ways of doing it: creating a python virtual environment or
+using conda environments. I chose the latter as it is the one I am more
+familiar with.
+
+#+BEGIN_SRC bash
+conda create --name nikola pip
+#+END_SRC
+
+To make sure the environment is initialized
+
+#+BEGIN_SRC bash
+source activate nikola
+#+END_SRC
+
+** Initialization
+
+** Theme customization
+The default theme is bootstrap3. You have the option to further customize it by
+using bootswatch options
+
+For example, if you want to use the Readable theme, use the following command
+
+#+BEGIN_SRC bash
+nikola bootswatch_theme -n readable -s readable
+#+END_SRC
+
+Now, set the theme to "readable" in in the ~conf.py~ file
+
+#+BEGIN_SRC python
+THEME = 'readable'
+#+END_SRC
+
