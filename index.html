@@ -6,6 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Carlos Perez</title>
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
@@ -70,14 +72,15 @@
             </span></p>
             <p class="dateline"><a href="posts/blogging-with-nikola-and-orgmode/" rel="bookmark"><time class="published dt-published" datetime="2017-10-21T15:13:33+05:00" title="2017-10-21 15:13">2017-10-21 15:13</time></a></p>
         </div>
-    </header><div class="e-content entry-content">
-    <p>
+    </header><div class="p-summary entry-summary">
+    <div>
+<p>
 After some time in the darkness, I have finally managed to set up a blog and
 write my first "serious" entry.
 </p>
 
 <p>
-I think it makes complete sense to star from the beginning, it means, by
+I think it makes complete sense to start from the beginning, it means, by
 showing what I did to get this blog going. I do this mainly for myself, to make
 me organize my thoughts and filter all the resources I have used. But I will be
 really happy if it also is clear enough for someone to follow along and start
@@ -94,120 +97,29 @@ some skills.
 So, no more words, and let's get started.
 </p>
 
-
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1">Static website</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-I have not had any previous experience with blogging and I have never been
-attracted by using platforms like WordPress, as it has a lot of features that
-you do not really use or control, it requires you to create an account and your
-posts need to be written in their platform, so once you do it, you do not
-really have access to them. But once I knew about the possibilities of using
-static content blog, I decided it was worth trying. Some of them are:
-</p>
-<ul class="org-ul">
-<li>Easy to use and update
-</li>
-<li>Possibility of hosting in Github Pages
-</li>
-<li>Your posts are saved as text files
-</li>
-<li>You look like a pro. :p
-</li>
-</ul>
+<p class="more"><a href="posts/blogging-with-nikola-and-orgmode/">Read more…</a></p>
 </div>
-</div>
-
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2">What do you need to get going?</h2>
-<div class="outline-text-2" id="text-2">
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/org-mode-tutorial/" class="u-url">Org mode tutorial</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Carlos Perez
+            </span></p>
+            <p class="dateline"><a href="posts/org-mode-tutorial/" rel="bookmark"><time class="published dt-published" datetime="2016-11-26T12:12:25-05:00" title="2016-11-26 12:12">2016-11-26 12:12</time></a></p>
+        </div>
+    </header><div class="p-summary entry-summary">
+    <div>
 <p>
-There are countless ways to blog using a static site. Hereby I provide my
-current way of working with the following:
-</p>
-
-<ul class="org-ul">
-<li>Nikola: a static site generator based on Python.
-</li>
-<li>Org mode: probably the most powerful text editor.
-</li>
-</ul>
-<p>
-I will try to separate them and mainly focus in a general
-installation. I will probably restructure my this blog entry once I have more
-content written.
+This is a document intended to be a tutorial for org mode. It was created by
+following the series org mode basics from the blog <a href="http://pragmaticemacs.com/category/org/">Pragmatic Emacs</a>.
 </p>
 
 <p>
-Saying that, you will definitely need the following:
-</p>
-<ul class="org-ul">
-<li>Python: Use a recent version. For this tutorial, I assume it is obtained with
-the Anaconda distribution.
-</li>
-<li>Github: A platform for hosting coding projects using the git versioning
-system. It is used to host the blog with a feature called github pages
-</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3">Basic installation</h2>
-<div class="outline-text-2" id="text-3">
-</div>
-<div id="outline-container-sec-3-1" class="outline-3">
-<h3 id="sec-3-1">Create a Conda environment</h3>
-<div class="outline-text-3" id="text-3-1">
-<p>
-Once you have your python installation ready, it is time to install Nikola,
-which can be installed as any other python library.
-It is advisable to use an isolated environment to better handling dependencies.
-There are mainly two ways of doing it: creating a python virtual environment or
-using conda environments. I chose the latter as it is the one I am more
-familiar with.
+I will probably modify it further to also test some specific features related
+to blog posts, as there are some parts of the file that need to be adapted.
 </p>
 
-<div class="highlight"><pre><span></span>conda create --name nikola pip
-</pre></div>
-
-<p>
-To make sure the environment is initialized
-</p>
-
-<div class="highlight"><pre><span></span>source activate nikola
-</pre></div>
-</div>
-</div>
-
-<div id="outline-container-sec-3-2" class="outline-3">
-<h3 id="sec-3-2">Initialization</h3>
-</div>
-
-<div id="outline-container-sec-3-3" class="outline-3">
-<h3 id="sec-3-3">Theme customization</h3>
-<div class="outline-text-3" id="text-3-3">
-<p>
-The default theme is bootstrap3. You have the option to further customize it by
-using bootswatch options
-</p>
-
-<p>
-For example, if you want to use the Readable theme, use the following command
-</p>
-
-<div class="highlight"><pre><span></span>nikola bootswatch_theme -n readable -s readable
-</pre></div>
-
-<p>
-Now, set the theme to "readable" in in the <code>conf.py</code> file
-</p>
-
-<div class="highlight"><pre><span></span><span class="n">THEME</span> <span class="o">=</span> <span class="s1">'readable'</span>
-</pre></div>
-</div>
-</div>
+<p class="more"><a href="posts/org-mode-tutorial/">Read more…</a></p>
 </div>
     </div>
     </article>
@@ -217,9 +129,11 @@ Now, set the theme to "readable" in in the <code>conf.py</code> file
 
 
 
-
-
-        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha256-SDRP1VVYu+tgAGKhddBSl5+ezofHKZeI+OzxakbIe/Y=" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});
+        </script>
+</div>
         <!--End of body content-->
 
         <footer id="footer">

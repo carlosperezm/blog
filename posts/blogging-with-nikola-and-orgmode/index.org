@@ -10,10 +10,11 @@
 #+END_COMMENT
 
 
+
 After some time in the darkness, I have finally managed to set up a blog and
 write my first "serious" entry.
 
-I think it makes complete sense to star from the beginning, it means, by
+I think it makes complete sense to start from the beginning, it means, by
 showing what I did to get this blog going. I do this mainly for myself, to make
 me organize my thoughts and filter all the resources I have used. But I will be
 really happy if it also is clear enough for someone to follow along and start
@@ -25,6 +26,7 @@ some skills.
 
 So, no more words, and let's get started.
 
+{{{TEASER_END}}}
 
 * Static website
 I have not had any previous experience with blogging and I have never been
@@ -56,7 +58,71 @@ Saying that, you will definitely need the following:
    system. It is used to host the blog with a feature called github pages
 
 * Basic installation
-** Create a Conda environment
+** Github pages
+We will be using github pages to host the blog. I was a bit confused at the
+beginning because it turned out that there are two types of pages: user and
+project.
+The main difference is that user pages are created if you have a github repo
+called ~username.github.io~ and the pages are served from the ~master~ branch.
+
+For project pages, you can create any repo and then add a ~gh-pages~ branch, so
+that Github automatically hosts the content in ~username.github.io/reponame~
+
+I have decided to create a repo called ~blog~ in Github
+
+Then, clone it on your computer with the command
+
+#+BEGIN_SRC bash
+git clone git@github.com:<username>.github.io.git ~/blog
+#+END_SRC
+
+Now move into the new repo
+
+#+BEGIN_SRC bash
+cd blog
+#+END_SRC
+
+The first thing to do is to create a ~gh-pages~ branch
+
+#+BEGIN_SRC bash
+git checkout --orphan gh-pages
+#+END_SRC
+
+In case you had any files in the master branch, make sure to delete them from
+the new one
+
+#+BEGIN_SRC bash
+git rm -rf .
+#+END_SRC
+
+NOw, it is useful to create a ~sources~ branch to put there all the sources of
+the blog
+
+#+BEGIN_SRC bash
+git checkout -b sources
+#+END_SRC
+
+Optionally, you can already add a ~.gitignore~ file. It will allow you to
+exclude files from commiting
+
+#+BEGIN_EXAMPLE
+*.py[cod]
+__pycache__
+cache
+output
+.doit.db
+_env/
+#+END_EXAMPLE
+
+and commit it. All the commands we will use from now on should happen inside
+the ~sources~ branch
+
+#+BEGIN_SRC bash
+git add .gitignore
+git commit -m "Add .gitignore"
+#+END_SRC
+
+** Set up the Nikola environment
 Once you have your python installation ready, it is time to install Nikola,
 which can be installed as any other python library.
 It is advisable to use an isolated environment to better handling dependencies.
@@ -65,8 +131,11 @@ using conda environments. I chose the latter as it is the one I am more
 familiar with.
 
 #+BEGIN_SRC bash
-conda create --name nikola pip
+conda create --name nikolablog pip
 #+END_SRC
+
+The previous command ensures that pip is also installed. By default, it uses
+the latest python version
 
 To make sure the environment is initialized
 
@@ -74,7 +143,30 @@ To make sure the environment is initialized
 source activate nikola
 #+END_SRC
 
+Now you can install Nikola
+
+#+BEGIN_SRC bash
+pip install nikola[extras]
+#+END_SRC
+
 ** Initialization
+Now comes the exciting time of turning your blog on.
+
+#+BEGIN_SRC bash
+$ nikola init my_first_site
+# Fill the asked information
+$ mv my_first_site/* .
+$ rm -r my_first_site
+#+END_SRC
+
+We are asked some basic customizations, but everything is up for grabs in the
+~conf.py~ file, where all the magic happens. We have at our disposal a whole
+lot of options, but for now, let's just commit the file
+
+#+BEGIN_SRC bash
+$ git add conf.py
+$ git commit -m "Add conf.py"
+#+END_SRC
 
 ** Theme customization
 The default theme is bootstrap3. You have the option to further customize it by
@@ -92,3 +184,12 @@ Now, set the theme to "readable" in in the ~conf.py~ file
 THEME = 'readable'
 #+END_SRC
 
+
+** Shell tab completion
+TYpe the next line into the terminal.
+
+#+BEGIN_SRC bash
+nikola tabcompletion --shell bash --hardcode-tasks > _nikola_bash
+#+END_SRC
+
+It is important to use the command ~source _nikola_bash~ to be activate it.
