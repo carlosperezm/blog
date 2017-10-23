@@ -97,7 +97,7 @@ Now, if you change the html properties, you can obtain something like the
 following:
 
 #+CAPTION: This is a table with lines around and between cells
-#+ATTR_HTML: :border 2 :rules group :frame border 0 :class table table-striped table-hover
+#+ATTR_HTML: :border 2 :rules group :frame void :class table table-striped table-hover
 | ID |     x |   y | comments |
 |----+-------+-----+----------|
 |  1 |    24 |   6 | first    |
@@ -119,7 +119,7 @@ The same command can easily convert some text to table. Select the text and use
 convert text to table.
 
 #+CAPTION: Some simple data operations
-#+ATTR_HTML: :border 3 :rules groups :frame border 0 :class table table-striped table-hover
+#+ATTR_HTML: :border 2 :rules groups :frame void :class table table-striped table-hover
 | ID  |  x |  y | Mean |
 |-----+----+----+------|
 | A   |  9 |  4 |  6.5 |
