@@ -184,7 +184,6 @@ Now, set the theme to "readable" in in the ~conf.py~ file
 THEME = 'readable'
 #+END_SRC
 
-
 ** Shell tab completion
 TYpe the next line into the terminal.
 
