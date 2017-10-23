@@ -89,7 +89,9 @@
     ("sh" . "sh")
     ("sql" . "sql")
     ("sqlite" . "sqlite3")
-    ("tcl" . "tcl"))
+    ("tcl" . "tcl")
+    ("ipython" . "python3")
+    ("bash" . "bash"))
   "Alist between org-babel languages and Pygments lexers.
 lang is downcased before assoc, so use lowercase to describe language available.
 See: http://orgmode.org/worg/org-contrib/babel/languages.html and
