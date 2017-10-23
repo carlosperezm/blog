@@ -3,7 +3,7 @@
 'render_galleries:output/galleries/rss.xml', (1024, 4442)
 'copy_assets:output/assets/css/images/ie6/borderBottomLeft.png', (5632, 498)
 'copy_assets:output/assets/fonts/glyphicons-halflings-regular.ttf', (6144, 506)
-'sitemap:output/sitemap.xml', (124416, 2376)
+'sitemap:output/sitemap.xml', (124416, 2378)
 'render_tag_cloud', (7680, 56)
 'robots_file:output/robots.txt', (8192, 136)
 'copy_assets:output/assets/css/nikola_rst.css', (8704, 453)
