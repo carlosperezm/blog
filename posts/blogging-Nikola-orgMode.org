@@ -191,4 +191,4 @@ TYpe the next line into the terminal.
 nikola tabcompletion --shell bash --hardcode-tasks > _nikola_bash
 #+END_SRC
 
-It is important to use the command ~source _nikola_bash~ to be activate it.
+It is important to use the command ~source _nikola_bash~ to activate it.
