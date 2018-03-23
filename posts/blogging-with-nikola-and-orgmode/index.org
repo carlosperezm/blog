@@ -23,7 +23,7 @@ This is not the conventional blogging system used by other sites like Wordpress
 or blogger and although it is not extremely difficult to use, it does require
 some skills.
 
-So, no more words, and let's get started.
+So, no more words, and let's get started with it.
 
 {{{TEASER_END}}}
 
