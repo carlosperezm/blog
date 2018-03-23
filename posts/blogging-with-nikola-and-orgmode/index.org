@@ -10,7 +10,6 @@
 #+END_COMMENT
 
 
-
 After some time in the darkness, I have finally managed to set up a blog and
 write my first "serious" entry.
 

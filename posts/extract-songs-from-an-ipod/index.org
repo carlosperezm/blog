@@ -1,0 +1,22 @@
+
+#+BEGIN_COMMENT
+.. title: Extract Songs from an Ipod 
+.. slug: extract-songs-from-an-ipod
+.. date: 2018-03-19 20:55:58 UTC-5:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+* My blog post
+
+#+BEGIN_SRC python :results output :exports both
+print("hello world")
+
+#+END_SRC
+
+#+RESULTS:
+: hello world
+
+This is a test post
