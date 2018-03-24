@@ -21,7 +21,7 @@ to blog posts, as there are some parts of the file that need to be adapted.
 {{{TEASER_END}}}
 
 * Org mode notes
-Setting up a simple text-based notebook.
+Setting up a simple text-based notebook with some of the features.
 
 ** Org mode structure
 Text in org is structured by headings, denoted by lines starting with *, so we
