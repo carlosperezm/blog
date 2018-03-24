@@ -10,6 +10,7 @@
 #+END_COMMENT
 
 
+
 After some time in the darkness, I have finally managed to set up a blog and
 write my first "serious" entry.
 
@@ -23,7 +24,7 @@ This is not the conventional blogging system used by other sites like Wordpress
 or blogger and although it is not extremely difficult to use, it does require
 some skills.
 
-So, no more words, and let's get started with it.
+So, no more words, and let's get started.
 
 {{{TEASER_END}}}
 
@@ -54,7 +55,8 @@ Saying that, you will definitely need the following:
  - Python: Use a recent version. For this tutorial, I assume it is obtained with
    the Anaconda distribution.
  - Github: A platform for hosting coding projects using the git versioning
-   system. It is used to host the blog with a feature called github pages
+   system. It is used to host the blog with a feature called github pages,
+   which opens a whole world of possibilities.
 
 * Basic installation
 ** Github pages
