@@ -3,21 +3,7 @@
 &lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Sat, 24 Mar 2018 02:47:59 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Extract Songs from an Ipod</title><link>https://carlosperezm.github.io/blog/posts/extract-songs-from-an-ipod/</link><dc:creator>Carlos Perez</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;My blog post&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"hello world"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;pre class="example"&gt;
-hello world
-&lt;/pre&gt;
-
-&lt;p&gt;
-This is a test post. I will update it soon.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><guid>https://carlosperezm.github.io/blog/posts/extract-songs-from-an-ipod/</guid><pubDate>Mon, 19 Mar 2018 15:55:58 GMT</pubDate></item><item><title>Blogging with Nikola and Orgmode</title><link>https://carlosperezm.github.io/blog/posts/blogging-with-nikola-and-orgmode/</link><dc:creator>Carlos Perez</dc:creator><description>&lt;div&gt;&lt;p&gt;
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Sat, 24 Mar 2018 18:13:57 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Blogging with Nikola and Orgmode</title><link>https://carlosperezm.github.io/blog/posts/blogging-with-nikola-and-orgmode/</link><dc:creator>Carlos Perez</dc:creator><description>&lt;div&gt;&lt;p&gt;
 After some time in the darkness, I have finally managed to set up a blog and
 write my first "serious" entry.
 &lt;/p&gt;

@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://carlosperezm.github.io/blog/categories/blog.xml</loc>
-  <lastmod>2018-03-23T02:09:00Z</lastmod>
+  <lastmod>2018-03-24T18:13:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://carlosperezm.github.io/blog/categories/mathjax.xml</loc>
@@ -19,10 +19,10 @@
  </sitemap>
  <sitemap>
   <loc>https://carlosperezm.github.io/blog/rss.xml</loc>
-  <lastmod>2018-03-23T02:09:00Z</lastmod>
+  <lastmod>2018-03-24T18:13:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://carlosperezm.github.io/blog/sitemap.xml</loc>
-  <lastmod>2018-03-23T02:09:00Z</lastmod>
+  <lastmod>2018-03-24T18:13:00Z</lastmod>
  </sitemap>
 </sitemapindex>
