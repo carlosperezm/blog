@@ -12,7 +12,7 @@
 
 #+MACRO: imgpost  [[../../images/$1]]
 
-This is a document intended to be a tutorial for org mode. It was created by
+This is a document *intended* to be a tutorial for org mode. It was created by
 following the series org mode basics from the blog [[http://pragmaticemacs.com/category/org/][Pragmatic Emacs]].
 
 I will probably modify it further to also test some specific features related

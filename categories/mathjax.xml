@@ -3,8 +3,8 @@
 &lt;a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"&gt;
 &lt;img alt="Creative Commons License BY-NC-SA"
 style="border-width:0; margin-bottom:12px;"
-src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Sat, 24 Mar 2018 23:34:53 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Org mode tutorial</title><link>https://carlosperezm.github.io/blog/posts/org-mode-tutorial/</link><dc:creator>Carlos Perez</dc:creator><description>&lt;div&gt;&lt;p&gt;
-This is a document intended to be a tutorial for org mode. It was created by
+src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Tue, 08 May 2018 10:30:18 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Org mode tutorial</title><link>https://carlosperezm.github.io/blog/posts/org-mode-tutorial/</link><dc:creator>Carlos Perez</dc:creator><description>&lt;div&gt;&lt;p&gt;
+This is a document &lt;b&gt;intended&lt;/b&gt; to be a tutorial for org mode. It was created by
 following the series org mode basics from the blog &lt;a href="http://pragmaticemacs.com/category/org/"&gt;Pragmatic Emacs&lt;/a&gt;.
 &lt;/p&gt;
 
